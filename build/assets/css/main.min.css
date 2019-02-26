@@ -225,22 +225,6 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.2s ease; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    outline: 0;
-    transform: scale(1.01);
-    transform: translateY(3px); }
 
 a {
   color: #f3f3f3;
@@ -343,10 +327,106 @@ hr {
     margin-right: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500; }
+    font-weight: 500;
+    -webkit-transition: 0s all ease-out;
+      -webkit-transition--webkit-transition-delay: 0s ease-out;
+      -webkit-transition--moz-transition: 0s all ease-out;
+      -webkit-transition--moz-transition-delay: 0s ease-out;
+      -webkit-transition--ms-transition: 0s all ease-out;
+      -webkit-transition--ms-transition-delay: 0s ease-out;
+      -webkit-transition--o-transition: 0s all ease-out;
+      -webkit-transition--o-transition-delay: 0s ease-out;
+      -webkit-transition-transition: 0s all ease-out;
+      -webkit-transition-transition-delay: 0s ease-out; }
 
 a.nav-hover:hover {
-  border-bottom: 2px solid #3ECB7A; }
+  border-bottom: 2px solid #3ECB7A;
+  -webkit-transition-delay: 0.05s;
+    -webkit-transition-delay--moz-transition-delay: 0.05s;
+    -webkit-transition-delay--ms-transition-delay: 0.05s;
+    -webkit-transition-delay--o-transition-delay: 0.05s;
+    -webkit-transition-delay-transition-delay: 0.05s; }
+
+.hero {
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: 150px; }
+
+#illustration {
+  float: left;
+  width: 40%;
+  height: 40%;
+  margin-top: -30px; }
+
+.heading {
+  float: right;
+  display: grid; }
+
+#main-heading {
+  margin-top: 0;
+  float: left; }
+
+.buttons {
+  float: left;
+  display: grid;
+  max-width: 180px; }
+
+#btn-contact {
+  float: left;
+  color: #f3f3f3;
+  text-align: center;
+  background-color: #3ECB7A;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  box-shadow: 8px 8px 20px rgba(62, 203, 122, 0.3);
+  -webkit-transition: 0s all ease-out;
+    -webkit-transition--webkit-transition-delay: 0s ease-out;
+    -webkit-transition--moz-transition: 0s all ease-out;
+    -webkit-transition--moz-transition-delay: 0s ease-out;
+    -webkit-transition--ms-transition: 0s all ease-out;
+    -webkit-transition--ms-transition-delay: 0s ease-out;
+    -webkit-transition--o-transition: 0s all ease-out;
+    -webkit-transition--o-transition-delay: 0s ease-out;
+    -webkit-transition-transition: 0s all ease-out;
+    -webkit-transition-transition-delay: 0s ease-out; }
+
+#btn-contact:hover {
+  color: #f3f3f3;
+  background-color: #31b569;
+  box-shadow: 8px 8px 20px rgba(49, 181, 105, 0.3);
+  -webkit-transition-delay: 0.05s;
+    -webkit-transition-delay--moz-transition-delay: 0.05s;
+    -webkit-transition-delay--ms-transition-delay: 0.05s;
+    -webkit-transition-delay--o-transition-delay: 0.05s;
+    -webkit-transition-delay-transition-delay: 0.05s; }
+
+#btn-download {
+  float: left;
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px 5px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  -webkit-transition: 0s all ease-out;
+    -webkit-transition--webkit-transition-delay: 0s ease-out;
+    -webkit-transition--moz-transition: 0s all ease-out;
+    -webkit-transition--moz-transition-delay: 0s ease-out;
+    -webkit-transition--ms-transition: 0s all ease-out;
+    -webkit-transition--ms-transition-delay: 0s ease-out;
+    -webkit-transition--o-transition: 0s all ease-out;
+    -webkit-transition--o-transition-delay: 0s ease-out;
+    -webkit-transition-transition: 0s all ease-out;
+    -webkit-transition-transition-delay: 0s ease-out; }
+
+#btn-download:hover {
+  color: #31b569;
+  -webkit-transition-delay: 0.05s;
+    -webkit-transition-delay--moz-transition-delay: 0.05s;
+    -webkit-transition-delay--ms-transition-delay: 0.05s;
+    -webkit-transition-delay--o-transition-delay: 0.05s;
+    -webkit-transition-delay-transition-delay: 0.05s; }
 
 .flex-video {
   height: 0;
@@ -369,7 +449,3 @@ a.nav-hover:hover {
   background-color: #011B3C;
   width: 100%;
   height: 100vh; }
-
-#main-heading {
-  margin-top: 152px;
-  float: right; }

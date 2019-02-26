@@ -1,0 +1,33 @@
+::selection
+  background: #FFF498
+
+::-moz-selection
+  background: #FFF498
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: #FFF498
+
+=transition($seconds)
+  -webkit-transition: $seconds all ease-out
+    -webkit-transition-delay: $seconds ease-out
+    -moz-transition: $seconds all ease-out
+    -moz-transition-delay: $seconds ease-out
+    -ms-transition: $seconds all ease-out
+    -ms-transition-delay: $seconds ease-out
+    -o-transition: $seconds all ease-out
+    -o-transition-delay: $seconds ease-out
+    transition: $seconds all ease-out
+    transition-delay: $seconds ease-out
+
+=transition-delay($seconds)
+  -webkit-transition-delay: $seconds
+    -moz-transition-delay: $seconds
+    -ms-transition-delay: $seconds
+    -o-transition-delay: $seconds
+    transition-delay: $seconds
