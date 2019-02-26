@@ -1,13 +1,23 @@
-.navigation
-  height: 70px
-  background-color: green
 
-.navbar
-  float: right
-  padding-left: 0
 
-.navbar li
-  display: inline-block
-  text-transform: uppercase
-  padding: 10px
-  text-align: center
+.main-nav
+  display: flex
+
+  li
+    list-style: none
+
+  li:first-child
+    margin-right: auto
+
+  a
+    display: block
+    color: white
+    padding: 8px 10px
+    margin-right: 10px
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 500
+
+//Navigation menu--HOVER effect
+a.nav-hover:hover
+  border-bottom: 2px solid $secondary

@@ -191,9 +191,8 @@ html {
 
 body {
   background: white;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
-  font-size: 14px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -279,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px; }
 
 .huge, h1 {
+  color: #f3f3f3;
   font-size: 68px;
   line-height: 1.05; }
   @media only screen and (max-width: 680px) {
@@ -286,8 +286,10 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 44px; } }
 
 .large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
+  color: #f3f3f3;
+  font-size: 40px;
+  line-height: 1.14;
+  text-transform: uppercase; }
   @media only screen and (max-width: 680px) {
     .large, h2 {
       font-size: 32px; } }
@@ -328,19 +330,23 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.navigation {
-  height: 70px;
-  background-color: green; }
+.main-nav {
+  display: flex; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto; }
+  .main-nav a {
+    display: block;
+    color: white;
+    padding: 8px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500; }
 
-.navbar {
-  float: right;
-  padding-left: 0; }
-
-.navbar li {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 10px;
-  text-align: center; }
+a.nav-hover:hover {
+  border-bottom: 2px solid #3ECB7A; }
 
 .flex-video {
   height: 0;
@@ -363,3 +369,7 @@ hr {
   background-color: #011B3C;
   width: 100%;
   height: 100vh; }
+
+#main-heading {
+  margin-top: 152px;
+  float: right; }
