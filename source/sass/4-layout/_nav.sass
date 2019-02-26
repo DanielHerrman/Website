@@ -1,5 +1,5 @@
 
-
+//Position of NAVIGATION BAR
 .main-nav
   display: flex
 
@@ -8,6 +8,14 @@
 
   li:first-child
     margin-right: auto
+
+/*SOCIAL ICONS*/
+  .nav-soc
+    margin: 0
+    padding: 8px 8px
+    +transition(0s)
+
+/*LINKS POSITIONING*/
 
   a
     display: block
@@ -18,7 +26,16 @@
     text-transform: uppercase
     font-weight: 500
     +transition(0s)
-//Navigation menu--HOVER effect
+
+
+/*Navigation menu--HOVER effect*/
 a.nav-hover:hover
   border-bottom: 2px solid $secondary
   +transition-delay(0.05s)
+
+/*LINE between menu and social icons*/
+.line-separation
+  background-color: $white
+  width: 2px
+  height: 24px
+  margin-top: 4px

@@ -320,6 +320,9 @@ hr {
     list-style: none; }
   .main-nav li:first-child {
     margin-right: auto; }
+  .main-nav .nav-soc {
+    margin: 0;
+    padding: 8px 8px; }
   .main-nav a {
     display: block;
     color: white;
@@ -346,6 +349,16 @@ a.nav-hover:hover {
     -webkit-transition-delay--ms-transition-delay: 0.05s;
     -webkit-transition-delay--o-transition-delay: 0.05s;
     -webkit-transition-delay-transition-delay: 0.05s; }
+
+.line-separation {
+  background-color: #f3f3f3;
+  width: 2px;
+  height: 24px;
+  margin-top: 4px; }
+
+.nav-soc {
+  margin: 0;
+  padding: 0; }
 
 .hero {
   max-width: 100%;
